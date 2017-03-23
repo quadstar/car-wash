@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Ian's Car Wash</h1>
+    <form>
+      <div>
+      <label>Vehicle Type: </label>
+        <input type="radio" name="vehicleType" value="car">Car
+        <input type="radio" name="vehicleType" value="truck">Truck 
+      </div>
+
+      <div>
+        <label>License Plate #: </label> 
+          <input type="text" name="plate">
+      </div>
+
+      <div id="truckInfo" style="display:none;">
+        <label>Truck Bed Condition</label>
+        <br />
+        <input type="checkbox" name="dirty"> Does your bed have mud in it? <br />
+        <input type="checkbox" name="down"> Is your bed down? 
+      </div>
+
+      <div>Total: <span id="total">0</span></div>
+
+      <button id="checkout" disabled> Checkout </button>
+    </form>
+
+    <div id="done" style="display:none">
+      Your car is being washed. Thank you!
+      <button id="back"> Back </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
